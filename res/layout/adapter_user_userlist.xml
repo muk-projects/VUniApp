@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_subjects_dateElement"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/adapter_user_university"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="University"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/adapter_user_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter_user_university"
+        android:layout_below="@+id/adapter_user_university"
+        android:singleLine="true"
+        android:text="User"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/adapter_user_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter_user_university"
+        android:layout_below="@+id/adapter_user_user"
+        android:password="true"
+        android:singleLine="true"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

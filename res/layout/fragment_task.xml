@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/fragment_task_titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/activity_task_titleHint" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/fragment_task_descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fragment_task_titleEditText"
+        android:layout_alignRight="@+id/fragment_task_titleEditText"
+        android:layout_below="@+id/fragment_task_titleEditText"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/activity_task_descriptionHint"
+        android:inputType="textMultiLine"
+        android:lines="3" />
+
+    <Spinner
+        android:id="@+id/fragment_task_colorSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/fragment_task_titleEditText"
+        android:layout_below="@+id/fragment_task_descriptionEditText"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/fragment_task_colorView" />
+
+    <View
+        android:id="@+id/fragment_task_colorView"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fragment_task_colorSpinner"
+        android:layout_alignLeft="@+id/fragment_task_titleEditText"
+        android:layout_alignTop="@+id/fragment_task_colorSpinner"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Red" />
+
+    <TextView
+        android:id="@+id/fragment_task_dateShowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fragment_task_descriptionEditText"
+        android:layout_alignRight="@+id/fragment_task_descriptionEditText"
+        android:layout_below="@+id/fragment_task_colorSpinner"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/activity_task_dateTextDefault" />
+
+    <LinearLayout
+        android:id="@+id/fragment_task_pickerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fragment_task_descriptionEditText"
+        android:layout_alignRight="@+id/fragment_task_descriptionEditText"
+        android:layout_below="@+id/fragment_task_dateShowText"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/fragment_task_pickDateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activity_task_datePickerText" />
+
+        <Button
+            android:id="@+id/fragment_task_pickTimeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activity_task_timePickerText" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fragment_task_imageShow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/fragment_task_buttonLayout"
+        android:layout_alignLeft="@+id/fragment_task_colorView"
+        android:layout_below="@+id/fragment_task_pickerLayout"
+        android:layout_toLeftOf="@+id/fragment_task_addButtonLayout" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_task_addButtonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_task_buttonLayout"
+        android:layout_alignRight="@+id/fragment_task_pickerLayout"
+        android:layout_below="@+id/fragment_task_pickerLayout" >
+
+        <Button
+            android:id="@+id/fragment_task_addImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableTop="@android:drawable/ic_menu_gallery"
+            android:text="@string/activity_task_addImageText" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_task_buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fragment_task_descriptionEditText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/fragment_task_descriptionEditText"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/fragment_task_saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activity_task_saveButtonText" />
+
+        <Button
+            android:id="@+id/fragment_task_deleteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activity_task_deleteButtonText" />
+    </LinearLayout>
+
+</RelativeLayout>

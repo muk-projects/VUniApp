@@ -1,0 +1,289 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <HorizontalScrollView
+        android:id="@+id/fragment_subjects_subjectsdetails_lvaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/White" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/fragment_subjects_subjectsdetails_lvaText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/fragment_subjects_subjectsdetails_lvaDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/fragment_subjects_subjectsdetails_tabButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_subjects_subjectsdetails_lvaLayout"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/fragment_subjects_subjectsdetails_tabButtonInfoLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/fragment_subjects_subjectsdetails_tabButtonInfo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/tabs"
+                android:text="@string/fragment_subject_details_tabs_info" />
+
+            <View
+                android:id="@+id/fragment_subjects_subjectsdetails_tabActiveInfo"
+                style="@style/tab"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_subjects_subjectsdetails_tabButtonDatesLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/fragment_subjects_subjectsdetails_tabButtonDates"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/tabs"
+                android:text="@string/fragment_subject_details_tabs_dates" />
+
+            <View
+                android:id="@+id/fragment_subjects_subjectsdetails_tabActiveDates"
+                style="@style/tab"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/LightGreen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_subjects_subjectsdetails_tabButtonExamsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/fragment_subjects_subjectsdetails_tabButtonExams"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/tabs"
+                android:text="@string/fragment_subject_details_tabs_exams" />
+
+            <View
+                android:id="@+id/fragment_subjects_subjectsdetails_tabActiveExams"
+                style="@style/tab"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/fragment_subjects_subjectsdetails_infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_subjects_subjectsdetails_tabButtonLayout"
+        android:layout_marginTop="8dp"
+        android:tag="@string/fragment_subject_details_layoutTagHide"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/fragment_subjects_subjectsdetails_infoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_seperator"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/fragment_subject_details_info_description"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <WebView
+                android:id="@+id/fragment_subjects_subjectsdetails_infoWebViewGoals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/fragment_subjects_subjectsdetails_infoProf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textview_seperator"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/fragment_subject_details_info_prof"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ListView
+                android:id="@+id/fragment_subjects_subjectsdetails_profList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/fragment_subjects_subjectsdetails_datesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_subjects_subjectsdetails_tabButtonLayout"
+        android:tag="@string/fragment_subject_details_layoutTagShow" >
+
+        <ListView
+            android:id="@+id/fragment_subjects_subjectsdetails_datesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fragment_subjects_subjectsdetails_datesMenu"
+            android:layout_marginTop="8dp" >
+
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/fragment_subjects_subjectsdetails_datesMenu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/menu_background" >
+
+            <Button
+                android:id="@+id/fragment_subjects_subjectsdetails_datesMenuButtonExportView"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/menu_button_background"
+                android:drawableLeft="@drawable/ic_button_calender"
+                android:text="@string/fragment_subject_details_menu_dates" />
+
+            <LinearLayout
+                android:id="@+id/fragment_subjects_subjectsdetails_datesMenuButtonExportLayout"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:visibility="invisible" >
+
+                <Button
+                    android:id="@+id/fragment_subjects_subjectsdetails_datesMenuButtonExport"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_button_background"
+                    android:text="@string/fragment_subject_details_menu_datesExport" />
+
+                <Button
+                    android:id="@+id/fragment_subjects_subjectsdetails_datesMenuButtonCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_button_background"
+                    android:text="@string/fragment_subject_details_menu_datesCancel" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_subjects_subjectsdetails_examsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_subjects_subjectsdetails_tabButtonLayout"
+        android:tag="@string/fragment_subject_details_layoutTagHide"
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@+id/fragment_subjects_subjectsdetails_examsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fragment_subjects_subjectsdetails_examsMenu"
+            android:layout_marginTop="8dp" >
+
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/fragment_subjects_subjectsdetails_examsMenu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/menu_background" >
+
+            <Button
+                android:id="@+id/fragment_subjects_subjectsdetails_examsMenuButtonExportView"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/menu_button_background"
+                android:drawableLeft="@drawable/ic_button_calender"
+                android:text="@string/fragment_subject_details_menu_dates" />
+
+            <LinearLayout
+                android:id="@+id/fragment_subjects_subjectsdetails_examsMenuButtonExportLayout"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:visibility="invisible" >
+
+                <Button
+                    android:id="@+id/fragment_subjects_subjectsdetails_examsMenuButtonExport"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_button_background"
+                    android:text="@string/fragment_subject_details_menu_datesExport" />
+
+                <Button
+                    android:id="@+id/fragment_subjects_subjectsdetails_examsMenuButtonCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_button_background"
+                    android:text="@string/fragment_subject_details_menu_datesCancel" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

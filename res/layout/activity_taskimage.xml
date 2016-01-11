@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_helpsecurity_layout"
+    style="@style/activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/activity_help_layout"
+    android:layout_alignParentTop="true" >
+
+    <FrameLayout
+        android:id="@+id/activity_intern_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

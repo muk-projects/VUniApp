@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/WhiteSmoke" >
+
+    <TextView
+        android:id="@+id/dialog_feedback_descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:text="@string/dialog_feedback_description" />
+
+    <EditText
+        android:id="@+id/dialog_feedback_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dialog_feedback_descriptionText"
+        android:layout_marginTop="1dp"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/dialog_feedback_logCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_feedback_description"
+        android:checked="true"
+        android:text="@string/dialog_feedback_log" />
+
+    <ScrollView
+        android:id="@+id/dialog_feedback_logScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_feedback_logCheck" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dialog_feedback_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

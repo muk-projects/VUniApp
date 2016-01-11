@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/fragment_certificates_certstatistics_avg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/fragment_certificates_certstatistics_avg"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/fragment_certificates_certstatistics_avgects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/fragment_certificates_certstatistics_avgects_background"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:text="@string/dummy"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/fragment_certificates_certstatistics_avgects_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/fragment_certificates_certstatistics_avgects"
+                android:layout_alignBottom="@+id/fragment_certificates_certstatistics_avgects"
+                android:layout_alignParentLeft="true"
+                android:text="@string/fragment_certificates_certstatistics_avgects"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/fragment_certificates_certstatistics_avgunweighted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/fragment_certificates_certstatistics_avgunweighted_background"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:text="@string/dummy"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/fragment_certificates_certstatistics_avgunweighted_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/fragment_certificates_certstatistics_avgunweighted"
+                android:layout_alignBottom="@+id/fragment_certificates_certstatistics_avgunweighted"
+                android:layout_alignParentLeft="true"
+                android:text="@string/fragment_certificates_certstatistics_avgunweighted"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/fragment_certificates_certstatistics_graph_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/fragment_certificates_certstatistics_graph"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_certificates_certstatistics_graph"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:padding="10dp" />
+    </LinearLayout>
+
+</ScrollView>

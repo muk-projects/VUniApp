@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/adapter_service_servicelist_toolname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/adapter_services_servicelist_activate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/adapter_services_servicelist_activate"
+        android:gravity="center|left"
+        android:text="@string/activity_services_servicename"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="10dp" />
+
+    <ToggleButton
+        android:id="@+id/adapter_services_servicelist_activate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="2dp"
+        android:background="@drawable/adapter_services_servicelist_line"
+        android:focusable="false"
+        android:text="@string/activity_services_activate" />
+
+</RelativeLayout>

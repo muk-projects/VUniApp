@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="at.mukprojects.vuniapp"
+    android:versionCode="10"
+    android:versionName="0.2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- App Activities -->
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.info.help.HelpStartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.info.help.HelpNavigationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.info.help.HelpUniversityActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.info.help.HelpUserActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.info.help.HelpSecurityActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.services.ServicesActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.canteen.CanteenActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.dates.DatesActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.FeedbackActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.searchprofessor.SearchProfessorActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.task.TaskActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.task.TaskImageActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.searchroom.SearchRoomActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.BrowserActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.subjects.SubjectsActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.certificates.CertificatesActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.baseclasses.activities.FragmentActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.settings.user.UserActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.settings.security.SecurityActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.settings.university.UniversitySettingActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="at.mukprojects.vuniapp.activities.ExportEventsActivity"
+            android:label="@string/app_name" />
+
+        <service android:name="at.mukprojects.vuniapp.daemons.certificatenotifier.CertificateNotifier" />
+
+        <!--
+              <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+
+        <receiver
+            android:name="at.mukprojects.vuniapp.widget.task.TaskWidget"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_task" />
+        </receiver>
+
+        <activity android:name="at.mukprojects.vuniapp.widget.task.TaskWidgetConfigActivity" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="at.mukprojects.vuniapp.widget.task.TaskWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+</manifest>

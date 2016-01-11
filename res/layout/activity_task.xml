@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/application_fullscreen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".activities.StartActivity" >
+
+    <!-- Actionbar -->
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar" />
+
+    <!-- Navigation and main content Container -->
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        style="@style/activity_navigation_container"
+        android:layout_below="@+id/actionbar" >
+
+        <!-- The main content view -->
+
+        <RelativeLayout
+            android:id="@+id/activity_task_taskLayout"
+            style="@style/activity_container" >
+
+            <Button
+                android:id="@+id/activity_task_createButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/activity_createButtonText" />
+
+            <TextView
+                android:id="@+id/activity_task_sortText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/activity_task_createButton"
+                android:text="@string/activity_sortText"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/activity_task_sortSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/activity_task_sortText"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/activity_task_sortText"
+                android:layout_toRightOf="@+id/activity_task_sortText"
+                android:visibility="invisible" />
+
+            <ListView
+                android:id="@+id/activity_task_taskList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_task_sortText" >
+            </ListView>
+        </RelativeLayout>
+
+        <!-- The navigation drawer -->
+
+        <ListView
+            android:id="@+id/drawer_layout_list"
+            style="@style/navigation_list" />
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

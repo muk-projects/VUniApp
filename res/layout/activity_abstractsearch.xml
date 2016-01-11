@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/application_fullscreen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- Actionbar -->
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar" />
+
+    <!-- Navigation and main content Container -->
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        style="@style/activity_navigation_container"
+        android:layout_below="@+id/actionbar" >
+
+        <!-- The main content view -->
+
+        <RelativeLayout style="@style/activity_container" >
+
+            <ListView
+                android:id="@+id/activity_search_results"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/activity_search_searchbutton" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/activity_search_resultsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_search_searchbutton"
+                android:layout_centerHorizontal="true"
+                android:text="@string/activity_resultsempty" />
+
+            <Spinner
+                android:id="@+id/activity_search_university"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+
+            <EditText
+                android:id="@+id/activity_search_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/activity_search_university"
+                android:layout_toLeftOf="@+id/activity_search_searchbutton"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/activity_search_searchbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/activity_search_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/activity_search_name"
+                android:text="@string/activity_searchroom_searchbutton" />
+        </RelativeLayout>
+
+        <!-- The navigation drawer -->
+
+        <ListView
+            android:id="@+id/drawer_layout_list"
+            style="@style/navigation_list" />
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

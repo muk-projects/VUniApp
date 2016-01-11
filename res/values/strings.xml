@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title">English</string>
+    <string name="dummy">&#8230;</string>
+
+    <!-- App Strings -->
+    <string name="app_name">VUniApp</string>
+    <string name="app_user_tu">Vienna University of Technology</string>
+    <string name="app_user_uniWien">University of Vienna</string>
+    <string name="app_user_wu">Vienna University of Economics and Business</string>
+
+    <!-- Dialog Strings -->
+    <string name="dialog_yesButton">Yes</string>
+    <string name="dialog_noButton">No</string>
+    <string name="dialog_oKButton">OK</string>
+    <string name="dialog_cancelButton">Cancel</string>
+    <!-- Task Exceptions Strings -->
+    <string name="activity_user_userLoadingDialog_text">User data is loading&#8230;</string>
+    <string name="activity_user_userSaveingDialog_text">VUniApp is saving user\'s data&#8230;</string>
+    <string name="activity_user_missingTestDialog_title">Missing Test!</string>
+    <string name="activity_user_missingTestDialog_text">Either the user has not been tested or an error occurred while testing. Do you want to save data?</string>
+    <string name="activity_user_saveOnExitDialog_title">Missing Save! </string>
+    <string name="activity_user_saveOnExitDialog_text">There are some unsaved changes. Do you want to save them?</string>
+    <!-- Task Exceptions Strings -->
+    <string name="exception_connection_titel">Connection Error</string>
+    <string name="exception_connection_message">User data could not be loaded! Please, try to restart the user control.</string>
+    <string name="exception_create_titel">Save Error</string>
+    <string name="exception_create_message">User data could not be saved! Please, try to restart the user control.</string>
+    <string name="exception_io_titel">Data Error!</string>
+    <string name="exception_io_message">An error occurred while loading data. The university homepage might not be available at the moment.</string>
+    <string name="exception_json_titel">Data Error!</string>
+    <string name="exception_json_message">An error occurred while processing the data. Please, try to conduct the query again!</string>
+    <string name="exception_login_titel">Login Error!</string>
+    <string name="exception_login_message">The login did not work. Please, check user data</string>
+    <string name="exception_read_titel">Save Error</string>
+    <string name="exception_read_message">User\'s data could not be loaded! Please, try to restart the user control.</string>
+    <string name="exception_update_titel">Error while updating!</string>
+    <string name="exception_update_message">An error occurred while updating your data.</string>
+    <string name="exception_delete_titel">Error while deleting!</string>
+    <string name="exception_delete_message">An error occurred while deleting your data.</string>
+    <string name="exception_internet_titel">Connection Problem!</string>
+    <string name="exception_internet_message">Can not connect to the Internet.</string>
+    <string name="exception_listempty_title">Data error!</string>
+    <string name="exception_listempty_message">We couldn\'t find any Data.</string>
+    <string name="exception_nouniversities_title">No Universities</string>
+    <string name="exception_nouniversities_message">There are no supported universities. Please check your universities settings.</string>
+    <string name="exception_nouniversityusers_title">No University Userdata</string>
+    <string name="exception_nouniversityusers_message">There are no supported university user accounts. Please check your Users under User control.</string>
+    <string name="exception_notInit_titel">Error!</string>
+    <string name="exception_notInit_message">The application couldn\'t start properly.</string>
+    <!-- Dialog ExceptionsExtends Strings -->
+    <string name="exception_extend_message">Some data might have been loaded despite the error. Do you want to continue or to end the process?</string>
+
+    <!-- Pin Dialog -->
+    <string name="dialog_pin_confirmation_titel">Password</string>
+    <string name="dialog_pin_confirmation_text">Please, type your password in</string>
+    <string name="dialog_pin_confirmation_retryText">Invalid password! Please, try again. Tries left: %1$s</string>
+    <string name="dialog_pin_confirmation_oKButton">OK</string>
+
+    <!-- Feedback Dialog -->
+    <string name="dialog_feedback_title">Feedback</string>
+    <string name="dialog_feedback_description">Description:</string>
+    <string name="dialog_feedback_log">Send Log</string>
+    <string name="dialog_feedback_sendButton">Send</string>
+
+    <!-- Actionbar Strings -->
+    <string name="actionbar_navigation">Navigation</string>
+    <string name="navigation_open">Open Navigation</string>
+    <string name="navigation_close">Close Navigation</string>
+    <string name="actionbar_menu">Menu</string>
+    <string name="actionbar_menu_text">:</string>
+
+    <!-- Navigation Strings -->
+    <string name="navigation_category_general">General</string>
+    <string name="navigation_category_settings">Settings</string>
+    <string name="navigation_category_info">Info</string>
+
+    <!-- Activity Strings -->
+    <!-- Help Activity -->
+    <string name="activity_help">Help</string>
+    <string name="activity_help_show">Do not show help again.</string>
+    <string name="activity_help_skip">Skip</string>
+    <string name="activity_help_next">Next</string>
+    <string name="activity_help_startWelcomeText">Welcome to VUniApp!</string>
+    <string name="activity_help_startText">With VUniApp you can easily manage your daily university life. If you want to learn how to use our app you can finish this quick and easy tutorial.\n\nClick on the Icon on the left side to open the navigation.</string>
+    <string name="activity_help_navigationText">You can easily navigate around by using the navigation sidebar.</string>
+    <string name="activity_help_universityText">Please choose your University:</string>
+    <string name="activity_help_userText">Create your first user. You can later add additional users through the User Settings.</string>
+    <string name="activity_help_securityText">You can secure your VUniApp data by providing a password to encrypt the database.</string>
+
+    <!-- Start Activity -->
+    <string name="activity_start">Start</string>
+    <string name="activity_start_dialog_internet_titel">Internet Connection</string>
+    <string name="activity_start_dialog_internet_message">VUniApp noticed that neither your roaming nor you WLAN are activated. Without connection to the internet many functions of VUniApp cannot be used. Do you want to be forwarded to your internet settings?</string>
+    <string name="activity_start_dialog_internet_positiv">Internet Settings</string>
+    <string name="activity_start_dialog_internet_negativ">Start VUniApp</string>
+
+    <!-- Home Activity -->
+    <string name="activity_home">Home</string>
+    <string name="activity_home_loading">The Homepage is loading&#8230;</string>
+    <string name="activity_home_info">No settings have been found. You can change the settings under Settings - Start Screen.</string>
+
+    <!-- Task Activity -->
+    <string name="activity_task">Tasks</string>
+    <string name="activity_task_loading">Updating tasklist&#8230;</string>
+    <string name="activity_createButtonText">Create new Task</string>
+    <string name="activity_sortText">Sort by:</string>
+    <string name="activity_task_saveToast">Task has been saved.</string>
+    <string name="activity_task_deleteToast">Task has been deleted.</string>
+    <string name="activity_task_titleHint">Title</string>
+    <string name="activity_task_descriptionHint">Description</string>
+    <string name="activity_task_dateTextDefault">Set a deadline for your task. (optinal)</string>
+    <string name="activity_task_datePickerText">Pick Date</string>
+    <string name="activity_task_timePickerText">Pick Time</string>  
+    <string name="activity_task_saveButtonText">Save</string>
+    <string name="activity_task_deleteButtonText">Delete</string>
+    <string name="activity_task_addImageText">Add Image</string>
+    <string name="activity_task_noDateText">No Deadline</string>
+    <string name="activity_task_noDescriptionText">No Description</string>
+    <!-- Widget -->
+    <string name="widget_task_text">VUniApp Tasks</string>
+    <string name="widget_task_newTask">New Task</string>
+    <string name="widget_task_startTasks">Start Tasks</string>
+
+    <!-- Dates Activity -->
+    <string name="activity_dates">Dates</string>
+    <string name="activity_dates_loading">Dates are loading&#8230;</string>
+    <!-- UniversitySettings Activity -->
+    <string name="activity_universitysettings">University Settings</string>
+    <string name="activity_universitysettings_text">Choose active universities:</string>
+    <string name="activity_universitysettings_button">Jump to User Settings</string>
+
+    <!-- Security Activity -->
+    <string name="activity_security">Security</string>
+    <string name="activity_security_info">Set a password to protect your Data.</string>
+    <string name="activity_security_oldPW">Old password:</string>
+    <string name="activity_security_newPW">New password:</string>
+    <string name="activity_security_newPWAgain">Repeat the new password:</string>
+    <string name="activity_security_change">Change Password</string>
+    <string name="activity_security_oldPinFalse">You typed an invalid Old Password.</string>
+    <string name="activity_security_newPinFalse">The new passwords do not match.</string>
+    <string name="activity_security_serviceFalse">While setting up the connection to the user control, an error occurred. Your changes won\'t be saved.</string>
+    <string name="activity_security_changed">Your password has been changed.</string>
+    <string name="activity_security_error">An error occurred while saving your password. Your password wasn\'t changed.</string>
+
+    <!-- User Activity -->
+    <!-- User Activity Content Strings -->
+    <string name="activity_user">User control</string>
+    <string name="activity_user_addButton">Add User</string>
+    <string name="activity_user_hint_noUser">There are no users yet. Please create a user to access the full functionalities of VUniApp. You can create as many users as your university needs to function but it is not possible to add two users of the same university and type.</string>
+    <string name="activity_user_hint_noUniversity">There are no universities yet. Please add an university in the University Settings.</string>
+    <!-- User Fragment Content Strings -->
+    <string name="activity_user_emptyUserKey">Only User</string>
+    <string name="activity_user_username">Username:</string>
+    <string name="activity_user_password">Password:</string>
+    <string name="activity_user_save">Save</string>
+    <string name="activity_user_delete">Delete</string>
+    <string name="activity_user_test">Test</string>
+    <string name="activity_user_saveToast">User has been saved.</string>
+
+    <!-- Mensa Activity -->
+    <string name="activity_mensa">Cafeteria</string>
+    <string name="activity_mensa_loading">Loading menus of cafeteria&#8230;</string>
+    <string name="activity_mensa_source">Source: www.mensen.at</string>
+
+    <!-- Prof Activity -->
+    <string name="activity_searchprofessor">Find professor</string>
+    <string name="activity_searchprofessor_searchfield">Name of the professor</string>
+    <string name="activity_searchprofessor_searchbutton">Search</string>
+    <string name="activity_searchprofessor_searching">Searching for the professor&#8230;</string>
+    <string name="activity_searchprofessor_gettingdetails">Details are loading&#8230;</string>
+    <string name="activity_searchprofessor_notimplemented">The funktion for the chosen university isn´t implemented yet.</string>
+
+    <!-- Room Activity -->
+    <string name="activity_searchroom">Find room</string>
+    <string name="activity_searchroom_searchfield">Name of the room</string>
+    <string name="activity_searchroom_searchbutton">Search</string>
+    <string name="activity_searchroom_searching">Searching for the room&#8230;</string>
+    <string name="activity_searchroom_gettingdetails">Details are loading&#8230;</string>
+    <!-- Room FragmentDetail -->
+    <string name="fragment_searchroom_room_tabDetail">Details</string>
+    <string name="fragment_searchroom_room_tabMap">Map</string>
+    <string name="fragment_searchroom_room_layoutTagHide">hide</string>
+    <string name="fragment_searchroom_room_layoutTagShow">show</string>
+    <string name="fragment_searchroom_room_addressBlock">Address</string>
+    <string name="fragment_searchroom_room_noData">No Data available.</string>
+
+    <!-- Browser Activity -->
+    <string name="activity_browser">Browser</string>
+
+    <!-- Subject Activity -->
+    <string name="activity_subjects">Lectures</string>
+    <string name="activity_subjects_nosubjects">We couldn\'t find any lectures.</string>
+    <string name="activity_subjects_loading">Loading lectures&#8230;</string>
+    <string name="activity_subjects_contextmenu_remove">Remove subject</string>
+    <string name="activity_subjects_contextmenu_edit">Edit subject</string>
+    <string name="fragment_subject_details">Lectures</string>
+    <string name="fragment_subject_details_loading">Loading lectures&#8230;</string>
+    <!-- Subject FragmentDetail -->
+    <string name="fragment_subject_details_tabs_info">Info</string>
+    <string name="fragment_subject_details_tabs_dates">Appointments</string>
+    <string name="fragment_subject_details_tabs_exams">Exams</string>
+    <string name="fragment_subject_details_layoutTagHide">hide</string>
+    <string name="fragment_subject_details_layoutTagShow">show</string>
+    <string name="fragment_subject_details_info_description">Lectures content</string>
+    <string name="fragment_subject_details_info_prof">Professors</string>
+    <string name="fragment_subject_details_menu_dates">Export dates</string>
+    <string name="fragment_subject_details_menu_datesExport">Export</string>
+    <string name="fragment_subject_details_menu_datesCancel">Cancel</string>
+    <string name="fragment_subject_details_contextmenu_export">Export dates</string>
+    <string name="fragment_subject_details_contextmenu_search">Find room</string>
+    <string name="fragment_subject_details_room_loading">GoogleMaps is loading&#8230;</string>
+    <string name="activity_exportevents">Exporting dates</string>
+    <string name="activity_exportevents_dates_loading">Dates are being exported&#8230;</string>
+
+    <!-- Certificates Activity -->
+    <string name="activity_certificates">Certificates</string>
+    <string name="activity_certificates_nocertificates">We couldn\'t find any certificates.</string>
+    <string name="activity_certificates_loading">Certificates are loading&#8230;</string>
+    <string name="fragment_certificates_certdetails_university">University</string>
+    <string name="fragment_certificates_certdetails_stnr">Index</string>
+    <string name="fragment_certificates_certdetails_coursenr">Lectures index</string>
+    <string name="fragment_certificates_certdetails_course">Lecture</string>
+    <string name="fragment_certificates_certdetails_professor">Professor</string>
+    <string name="fragment_certificates_certdetails_hours">Lessons</string>
+    <string name="fragment_certificates_certdetails_ects">ECTS</string>
+    <string name="fragment_certificates_certdetails_date">Date</string>
+    <string name="fragment_certificates_certdetails_grade">Grade</string>
+    <string name="fragment_certificates_certstatistics">Statistics</string>
+    <string name="fragment_certificates_certstatistics_avg">Average</string>
+    <string name="fragment_certificates_certstatistics_avgects">Average (ECTS weighted)</string>
+    <string name="fragment_certificates_certstatistics_avgunweighted">unweighted</string>
+    <string name="fragment_certificates_certstatistics_graph">Grade Timeline</string>
+
+    <!-- Tools Activities -->
+    <string name="activity_services">Services</string>
+    <string name="activity_services_activate">Activate</string>
+    <string name="activity_services_deactivate">Deactivate</string>
+    <string name="activity_services_servicename">Service</string>
+    <string name="activity_services_certificatenotifier">Certificate Notifier</string>
+
+    <!-- Certificate Notifier Fragment -->
+    <string name="fragment_services_certificatenotifier_description">The Certificate Notifier will check periodically for Certificates and will notify you if you get new ones.</string>
+    <string name="fragment_services_certificatenotifier_checkingintervall">Checking Intervall (0:0 for every 24 hours)</string>
+    <string name="fragment_services_certificatenotifier_onlywlan">Check only if in WLAN</string>
+    <string name="fragment_services_certificatenotifier_defaultsettings">Load Configuration</string>
+    <string name="fragment_services_certificatenotifier_setting_daily">Daily</string>
+    <string name="fragment_services_certificatenotifier_setting_important">Important</string>
+    <string name="fragment_services_certificatenotifier_setting_hardcore">Hardcore Mode</string>
+
+    <!-- Info Navigation -->
+    <string name="info_contribute">Taking part</string>
+    <string name="info_releasenotes">Version info</string>
+    <string name="info_contributors">Contributors</string>
+    <string name="info_vuniapp">VUniApp</string>
+    <string name="info_feedback">Feedback</string>
+    <string name="info_impressum">Legal notice</string>
+
+    <!-- Daemons -->
+    <string name="daemon_certificatenotifier_newcertificates">You got new Certificates.</string>
+
+    <!-- Abstraktions String -->
+    <string name="activity_resultsempty">No matching elements.</string>
+
+</resources>

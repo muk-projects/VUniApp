@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_navigation_navigationlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/selector_navigation_item" >
+
+    <TextView
+        android:id="@+id/adapter_navigation_navigationlist_item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="6dp"
+        android:background="@color/LightGrey"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:fontFamily="sans-serif-condensed" />
+
+</RelativeLayout>

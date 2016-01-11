@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/actionbar_background_std" >
+
+    <ImageButton
+        android:id="@+id/actionbar_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="-6dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/actionbar_navigation"
+        android:src="@drawable/ic_button_navigation_in" />
+
+    <TextView
+        android:id="@+id/actionbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/actionbar_navigation"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/actionbar_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/stat_notify_sync"
+        android:visibility="gone" />
+
+</RelativeLayout>

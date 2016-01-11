@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/fragment_searchroom_room_roomNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fragment_searchroom_room_roomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_searchroom_room_tabButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_searchroom_room_roomNameLayout"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/fragment_searchroom_room_tabButtonDetailLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/fragment_searchroom_room_tabButtonDetail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/tabs"
+                android:text="@string/fragment_searchroom_room_tabDetail" />
+
+            <View
+                android:id="@+id/fragment_searchroom_room_tabViewDetail"
+                style="@style/tab"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/LightGreen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_searchroom_room_tabButtonMapLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/fragment_searchroom_room_tabButtonMap"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/tabs"
+                android:text="@string/fragment_searchroom_room_tabMap" />
+
+            <View
+                android:id="@+id/fragment_searchroom_room_tabViewMap"
+                style="@style/tab"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_searchroom_room_DetailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fragment_searchroom_room_tabButtonLayout"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:tag="@string/fragment_searchroom_room_layoutTagShow" >
+
+        <TextView
+            android:id="@+id/fragment_searchroom_room_DetailTextUni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview_seperator"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/fragment_searchroom_room_DetailTextRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_searchroom_room_DetailTextUni"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/fragment_searchroom_room_DetailTextAddressBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fragment_searchroom_room_DetailTextRoom"
+            android:layout_alignRight="@+id/fragment_searchroom_room_DetailTextRoom"
+            android:layout_below="@+id/fragment_searchroom_room_DetailTextRoom"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textview_seperator_black"
+            android:text="@string/fragment_searchroom_room_addressBlock" />
+
+        <TextView
+            android:id="@+id/fragment_searchroom_room_DetailTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fragment_searchroom_room_DetailTextRoom"
+            android:layout_alignRight="@+id/fragment_searchroom_room_DetailTextRoom"
+            android:layout_below="@+id/fragment_searchroom_room_DetailTextAddressBlock"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/fragment_searchroom_room_DetailTextInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fragment_searchroom_room_DetailTextRoom"
+            android:layout_alignRight="@+id/fragment_searchroom_room_DetailTextRoom"
+            android:layout_below="@+id/fragment_searchroom_room_DetailTextAddress"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_searchroom_room_MapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fragment_searchroom_room_tabButtonLayout"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:tag="@string/fragment_searchroom_room_layoutTagHide"
+        android:visibility="invisible" >
+
+        <WebView
+            android:id="@+id/fragment_searchroom_room_MapWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

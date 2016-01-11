@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fragment_services_certificatenotifier_text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_services_certificatenotifier_description" />
+
+    <TextView
+        android:id="@+id/fragment_services_certificatenotifier_text_checkingintervall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_services_certificatenotifier_checkingintervall" />
+
+    <TimePicker
+        android:id="@+id/fragment_services_certificatenotifier_checkingintervall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/fragment_services_certificatenotifier_onlywlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_services_certificatenotifier_onlywlan" />
+
+    <TextView
+        android:id="@+id/fragment_services_certificatenotifier_text_defaultsettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_services_certificatenotifier_defaultsettings" />
+
+    <Button
+        android:id="@+id/fragment_services_certificatenotifier_setting_daily"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_services_certificatenotifier_setting_daily" />
+
+    <Button
+        android:id="@+id/fragment_services_certificatenotifier_setting_important"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_services_certificatenotifier_setting_important" />
+
+    <Button
+        android:id="@+id/fragment_services_certificatenotifier_setting_hardcore"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_services_certificatenotifier_setting_hardcore" />
+
+</LinearLayout>

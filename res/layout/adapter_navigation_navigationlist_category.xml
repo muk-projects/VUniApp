@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_navigation_navigationlist_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey" >
+
+    <TextView
+        android:id="@+id/adapter_navigation_navigationlist_category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-condensed" />
+
+</RelativeLayout>

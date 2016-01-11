@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_subjects_dateElement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp" >
+
+    <View
+        android:id="@+id/adapter_task_color"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/adapter_task_date"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp" />
+
+    <TextView
+        android:id="@+id/adapter_task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/adapter_task_image"
+        android:layout_toRightOf="@+id/adapter_task_color"
+        android:singleLine="true"
+        android:text="Task Title Example"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/adapter_task_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter_task_title"
+        android:layout_below="@+id/adapter_task_title"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/adapter_task_color"
+        android:maxLines="2"
+        android:text="Task Description Example"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/adapter_task_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adapter_task_title"
+        android:layout_below="@+id/adapter_task_description"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/adapter_task_color"
+        android:text="Task Date Example"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/adapter_task_image"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+</RelativeLayout>

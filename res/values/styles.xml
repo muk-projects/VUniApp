@@ -1,0 +1,117 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Screen Layout. -->
+    <style name="application_fullscreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:background">@color/White</item>
+    </style>
+
+    <!-- Navigationbar. -->
+    <style name="navigation_list">
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:background">@drawable/navigation_listview_background</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@color/Black</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">9dp</item>
+    </style>
+
+    <style name="activity_navigation_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Content Theme. -->
+    <style name="activity_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+    </style>
+
+    <style name="seperator_thin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">@color/Green</item>
+    </style>
+
+    <style name="seperator_thick">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@color/Green</item>
+    </style>
+
+    <style name="tab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">@color/Green</item>
+    </style>
+
+    <style name="space">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/White</item>
+    </style>
+
+    <!-- Text Theme. -->
+    <style name="textView_small" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textView_medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textView_large" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!-- EditText Theme. -->
+    <style name="editText_small">
+        <item name="android:ems">14</item>
+       <item name="android:background">@android:drawable/editbox_background_normal</item>
+    </style>
+
+    <style name="editText_medium">
+        <item name="android:ems">16</item>
+    </style>
+
+    <style name="editText_large">
+        <item name="android:ems">22</item>
+    </style>
+
+</resources>

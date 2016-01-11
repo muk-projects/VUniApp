@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/application_fullscreen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".activities.StartActivity" >
+
+    <!-- Actionbar -->
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar" />
+
+    <!-- Navigation and main content Container -->
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        style="@style/activity_navigation_container"
+        android:layout_below="@+id/actionbar" >
+
+        <!-- The main content view -->
+
+        <RelativeLayout
+            android:id="@+id/activity_user_userLayout"
+            style="@style/activity_container" >
+
+            <Button
+                android:id="@+id/activity_user_addButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/activity_user_addButton" />
+
+            <ListView
+                android:id="@+id/activity_user_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/activity_user_addButton"
+                android:visibility="invisible" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/activity_user_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_user_addButton"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/activity_user_hint_noUser"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <!-- The navigation drawer -->
+
+        <ListView
+            android:id="@+id/drawer_layout_list"
+            style="@style/navigation_list" />
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

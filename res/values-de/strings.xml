@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title">German</string>
+    <string name="dummy">&#8230;</string>
+
+    <!-- App Strings -->
+    <string name="app_name">VUniApp</string>
+    <string name="app_user_tu">Technische Universität Wien</string>
+    <string name="app_user_uniWien">Universität Wien</string>
+    <string name="app_user_wu">Wirtschafts Universität Wien</string>
+
+    <!-- Dialog Strings -->
+    <string name="dialog_yesButton">Ja</string>
+    <string name="dialog_noButton">Nein</string>
+    <string name="dialog_oKButton">OK</string>
+    <string name="dialog_cancelButton">Abbrechen</string>
+    <!-- Task Exceptions Strings -->
+    <string name="activity_user_userLoadingDialog_text">Die Benutzerdaten werden geladen&#8230;</string>
+    <string name="activity_user_userSaveingDialog_text">Die Benutzerdaten werden gespeichert&#8230;</string>
+    <string name="activity_user_missingTestDialog_title">Achtung Test fehlt!</string>
+    <string name="activity_user_missingTestDialog_text">Der Benutzer wurde noch nicht getestet oder der Test ist fehlgeschlagen. Wollen Sie den Benutzer dennoch speichern?</string>
+    <string name="activity_user_saveOnExitDialog_title">Achtung ungespeicherte Änderung!</string>
+    <string name="activity_user_saveOnExitDialog_text">Einige Änderung wurden noch nicht gespeichert. Möchten Sie diese speichern?</string>
+    <!-- Task Exceptions Strings -->
+    <string name="exception_connection_titel">Verbindungsfehler!</string>
+    <string name="exception_connection_message">Die Benutzerdaten konnten nicht geladen werden! Bitte versuchen Sie die Benutzerverwaltung neu zu starten.</string>
+    <string name="exception_create_titel">Fehler beim Speichern!</string>
+    <string name="exception_create_message">Die Benutzerdaten konnten nicht gespeichert werden! Bitte versuchen Sie die Benutzerverwaltung neu zu starten.</string>
+    <string name="exception_io_titel">Datenfehler!</string>
+    <string name="exception_io_message">Beim Zugriff auf die Daten ist ein Fehler aufgetreten. Möglicherweise ist die Universitäts-Seite im Moment nicht erreichbar.</string>
+    <string name="exception_json_titel">Datenfehler!</string>
+    <string name="exception_json_message">Beim Verarbeiten der Daten ist ein Fehler aufgetreten. Bitte versuchen Sie die Suchanfrage erneut auszuführen.</string>
+    <string name="exception_login_titel">Fehler beim Login!</string>
+    <string name="exception_login_message">Der Login ist fehlgeschlagen. Bitte überprüfen Sie Ihre Benutzerdaten.</string>
+    <string name="exception_read_titel">Fehler beim Laden!</string>
+    <string name="exception_read_message"> Die Benutzerdaten konnten nicht geladen werden! Bitte versuchen Sie die Benutzerverwaltung neu zu starten.</string>
+    <string name="exception_update_titel">Fehler beim Update der Daten!</string>
+    <string name="exception_update_message">Beim Update der Daten ist ein Fehler aufgetretten.</string>
+    <string name="exception_delete_titel">Fehler beim Löschen der Daten!</string>
+    <string name="exception_delete_message">Beim Löschen der Daten ist ein Fehler aufgetretten.</string>
+    <string name="exception_internet_titel">Verbindungsfehler!</string>
+    <string name="exception_internet_message">Es konnte keine Verbindung mit dem Internet aufgebaut werden.</string>
+    <string name="exception_listempty_title">Datenfehler!</string>
+    <string name="exception_listempty_message">Es wurden keine Daten empfangen.</string>
+    <string name="exception_nouniversities_title">Keine Universitäten</string>
+    <string name="exception_nouniversities_message">Es sind keine unterstützten Universitäten vorhanden. Bitte Universitätseinstellungen checken.</string>
+    <string name="exception_nouniversityusers_title">Keine Universitätsbenutzer</string>
+    <string name="exception_nouniversityusers_message">Es wurden keine Universitätsbenutzer für die unterstützten Universitäten angegeben. Bitte Benutzerverwaltung Checken.</string>
+    <string name="exception_notInit_titel">Fehler!</string>
+    <string name="exception_notInit_message">Das Programm konnte nicht korrekt gestartet werden.</string>
+    <!-- Dialog ExceptionsExtends Strings -->
+    <string name="exception_extend_message">Möglicherweise konnten trotz des Fehler einige Daten geladen werden. Möchten Sie fortfahren oder den Vorgang beenden?</string>
+
+    <!-- Pin Dialog -->
+    <string name="dialog_pin_confirmation_titel">Passwort</string>
+    <string name="dialog_pin_confirmation_text">Bitte geben Sie Ihr Passwort ein.</string>
+    <string name="dialog_pin_confirmation_retryText">Ihre Eingabe ist ungültig! Bitte geben Sie das Passwort erneut ein. Verbleibende Versuche: %1$s</string>
+    <string name="dialog_pin_confirmation_oKButton">OK</string>
+
+    <!-- Feedback Dialog -->
+    <string name="dialog_feedback_title">Feedback</string>
+    <string name="dialog_feedback_description">Beschreibung:</string>
+    <string name="dialog_feedback_log">Log senden</string>
+    <string name="dialog_feedback_sendButton">Senden</string>
+    <string name="dialog_feedback_chooser">Choose an Email client :</string>
+
+    <!-- Actionbar Strings -->
+    <string name="actionbar_navigation">Navigation</string>
+    <string name="navigation_open">Öffne Navigation</string>
+    <string name="navigation_close">Schließe Navigation</string>
+    <string name="actionbar_menu">Menü</string>
+    <string name="actionbar_menu_text">:</string>
+
+    <!-- Navigation Strings -->
+    <string name="navigation_category_general">Allgemein</string>
+    <string name="navigation_category_settings">Einstellungen</string>
+    <string name="navigation_category_info">Info</string>
+
+    <!-- Activity Strings -->
+    <!-- Help Activity -->
+    <string name="activity_help">Help</string>
+    <string name="activity_help_show">Do not show help again.</string>
+    <string name="activity_help_skip">Skip</string>
+    <string name="activity_help_next">Next</string>
+    <string name="activity_help_startWelcomeText">Willkommen bei VUniApp!</string>
+    <string name="activity_help_startText">Mit der Hilfe von VUniApp kann der Unialltag einfach mit dem Handy gemanagt werden. Um den Umgang mit der App zu lernen, kann man diesen einfachen Hilfeassistenten durchmachen.\n\nDurch einen Klick auf das Icon in der Startleiste kann die Navigation geöffnet werden.</string>
+    <string name="activity_help_navigationText">Mit Hife der Naviagiton kann auf einfache Weise zwischen den Funktionen navigiert werden.</string>
+    <string name="activity_help_universityText">Wählen Sie Ihre Universitäten:</string>
+    <string name="activity_help_userText">Erstellen Sie Ihren ersten Benutzer. Sie können später noch weitere Benutzer in der Benutzerverwaltung hinzufügen.</string>
+    <string name="activity_help_securityText">Durch die Eingabe eines Passwort können Sie VUniApp noch zusätzlich schützen, indem die Daten verschlüsselt werden.</string>
+
+    <!-- Start Activity -->
+    <string name="activity_start">Start</string>
+    <string name="activity_start_dialog_internet_titel">Internetverbindung</string>
+    <string name="activity_start_dialog_internet_message">VUniApp hat festgestellt, dass Sie weder Roaming noch WLAN aktiviert haben. Ohne Internetzugang können viele Funktionen von VUniApp nicht genutzt werden. Möchten Sie zu den Einstellungen weitergeleitet werden?</string>
+    <string name="activity_start_dialog_internet_positiv">Internet Einstellungen</string>
+    <string name="activity_start_dialog_internet_negativ">VUniApp starten</string>
+
+    <!-- Home Activity -->
+    <string name="activity_home">Startseite</string>
+    <string name="activity_home_loading">Die Startseite wird geladen&#8230;</string>
+    <string name="activity_home_info">Es wurden keine Start Bildschirm Infos eingestellt. Sie können diese Einstellung unter Einstellungen - Start Bildschirm ändern.</string>
+
+        <!-- Task Activity -->
+    <string name="activity_task">Aufgaben</string>
+    <string name="activity_task_loading">Aufgabenliste wird aktualisiert&#8230;</string>
+    <string name="activity_createButtonText">Neue Aufgabe erstellen</string>
+    <string name="activity_sortText">Sortierung nach:</string>
+    <string name="activity_task_saveToast">Aufgabe wurde erstellt.</string>
+    <string name="activity_task_deleteToast">Aufgabe wurde gelöscht.</string>
+    <string name="activity_task_titleHint">Titel</string>
+    <string name="activity_task_descriptionHint">Beschreibung</string>
+    <string name="activity_task_dateTextDefault">Setzt eine Deadline. (optinal)</string>
+    <string name="activity_task_datePickerText">Datum</string>
+    <string name="activity_task_timePickerText">Uhrzeit</string>  
+    <string name="activity_task_saveButtonText">Speichern</string>
+    <string name="activity_task_deleteButtonText">Löschen</string>
+    <string name="activity_task_addImageText">Bild hinzufügen</string>
+    <string name="activity_task_noDateText">Keine Deadline</string>
+    
+    <!-- Dates Activity -->
+    <string name="activity_dates">Termine</string>
+    <string name="activity_dates_loading">Termine werden geladen&#8230;</string>
+
+    <!-- UniversitySettings Activity -->
+    <string name="activity_universitysettings">University Settings</string>
+    <string name="activity_universitysettings_text">Aktive Univeristäten wählen:</string>
+    <string name="activity_universitysettings_button">zur Benutzerverwaltung wechseln</string>
+
+    <!-- Security Activity -->
+    <string name="activity_security">Sicherheit</string>
+    <string name="activity_security_info">Mit einem Passwort kannst du deine Daten sowie die gesamte App mit einem Passwort verschlüsseln.</string>
+    <string name="activity_security_oldPW">Altes Passwort:</string>
+    <string name="activity_security_newPW">Neues Passwort:</string>
+    <string name="activity_security_newPWAgain">Neues Passwort wiederholen:</string>
+    <string name="activity_security_change">Kennwort ändern</string>
+    <string name="activity_security_oldPinFalse">Das eingegeben alte Passwort ist ungültig!</string>
+    <string name="activity_security_newPinFalse">Die eingegebenen neuen Passwörter stimmen nicht überein.</string>
+    <string name="activity_security_serviceFalse">Beim Verbindungsaufbau mit der Benutzerverwaltung kam es zu einem Fehler. Das Passwort konnte nicht geändert werden.</string>
+    <string name="activity_security_changed">Das Passwort wurde erfolgreich geändert.</string>
+    <string name="activity_security_error">Beim Ändern des Passworts ist ein Fehler aufgetreten. Das Passwort wurde nicht erfolgreich gändert.</string>
+
+    <!-- User Activity -->
+    <!-- User Activity Content Strings -->
+    <string name="activity_user">User control</string>
+    <string name="activity_user_addButton">Add User</string>
+    <string name="activity_user_hint_noUser">Es wurde noch kein Benutzer angelegt. Lege einen Benutzer an, um vollen Zugriff auf deine Universitätsdaten zu erhalten. Du kannst auch mehrere Benutzer anlegen, falls in deiner Universität mehrere Benutzer erforderlich sind oder du auch mehr als einer Universität studierst. Es ist jedoch nicht möglich zweimal denselben Benutzer mit unterschiedlichen Zugangsdaten anzulegen.</string>
+    <string name="activity_user_hint_noUniversity">Es wurden noch keine Universitäten gewählt. Bitte füge eine Universität in den Universitätseinstellungen hinzu.</string>
+    <!-- User Fragment Content Strings -->
+    <string name="activity_user_emptyUserKey">Only User</string>
+    <string name="activity_user_username">Benutzername:</string>
+    <string name="activity_user_password">Passwort:</string>
+    <string name="activity_user_save">Speichern</string>
+    <string name="activity_user_delete">Löschen</string>
+    <string name="activity_user_test">Test</string>
+    <string name="activity_user_saveToast">Benutzer gespeichert.</string>
+
+    <!-- Mensa Activity -->
+    <string name="activity_mensa">Mensen</string>
+    <string name="activity_mensa_loading">Die Mensa-Menüs werden geladen&#8230;</string>
+    <string name="activity_mensa_source">Quelle: www.mensen.at</string>
+
+    <!-- Prof Activity -->
+    <string name="activity_searchprofessor">Professoren Suche</string>
+    <string name="activity_searchprofessor_searchfield">Name des Professors</string>
+    <string name="activity_searchprofessor_searchbutton">Suchen</string>
+    <string name="activity_searchprofessor_searching">Professorenverzeichnis wird durchsucht&#8230;</string>
+    <string name="activity_searchprofessor_gettingdetails">Professoren-Details werden geladen&#8230;</string>
+    <string name="activity_searchprofessor_notimplemented">Professoren-Suche in dieser Universität ist noch nicht implementiert.</string>
+
+    <!-- Room Activity -->
+    <string name="activity_searchroom">Find room</string>
+    <string name="activity_searchroom_searchfield">Name of the room</string>
+    <string name="activity_searchroom_searchbutton">Search</string>
+    <string name="activity_searchroom_searching">Searching for the room&#8230;</string>
+    <string name="activity_searchroom_gettingdetails">Details are loading&#8230;</string>
+    <!-- Room FragmentDetail -->
+    <string name="fragment_searchroom_room_tabDetail">Details</string>
+    <string name="fragment_searchroom_room_tabMap">Map</string>
+    <string name="fragment_searchroom_room_layoutTagHide">hide</string>
+    <string name="fragment_searchroom_room_layoutTagShow">show</string>
+    <string name="fragment_searchroom_room_addressBlock">Address</string>
+    <string name="fragment_searchroom_room_noData">No Data available.</string>
+
+    <!-- Browser Activity -->
+    <string name="activity_browser">Browser</string>
+
+    <!-- Subject Activity -->
+    <string name="activity_subjects">Lehrveranstaltungen</string>
+    <string name="activity_subjects_nosubjects">Es wurden keine Fächer gefunden.</string>
+    <string name="activity_subjects_loading">Lehrveranstaltungen werden geladen&#8230;</string>
+    <string name="activity_subjects_contextmenu_remove">Fach entfernen</string>
+    <string name="activity_subjects_contextmenu_edit">Fach bearbeiten</string>
+    <string name="fragment_subject_details">Lehrveranstaltung</string>
+    <string name="fragment_subject_details_loading">Lehrveranstaltung wird geladen&#8230;</string>
+    <!-- Subject FragmentDetail -->
+    <string name="fragment_subject_details_tabs_info">Info</string>
+    <string name="fragment_subject_details_tabs_dates">Termine</string>
+    <string name="fragment_subject_details_tabs_exams">Prüfungen</string>
+    <string name="fragment_subject_details_layoutTagHide">hide</string>
+    <string name="fragment_subject_details_layoutTagShow">show</string>
+    <string name="fragment_subject_details_info_description">Inhalt der Lehrveranstaltung</string>
+    <string name="fragment_subject_details_info_prof">Professoren</string>
+    <string name="fragment_subject_details_menu_dates">Termine exportieren</string>
+    <string name="fragment_subject_details_menu_datesExport">Exportieren</string>
+    <string name="fragment_subject_details_menu_datesCancel">Abbrechen</string>
+    <string name="fragment_subject_details_contextmenu_export">Termin exportieren</string>
+    <string name="fragment_subject_details_contextmenu_search">Raum suchen</string>
+    <string name="fragment_subject_details_room_loading">GoogleMaps wird geladen&#8230;</string>
+    <string name="activity_exportevents">Termine werden exportiert</string>
+    <string name="activity_exportevents_dates_loading">Termine werden exportiert&#8230;</string>
+
+    <!-- Certificates Activity -->
+    <string name="activity_certificates">Zeugnisse</string>
+    <string name="activity_certificates_nocertificates">Es wurden keine Zeugnisse gefunden.</string>
+    <string name="activity_certificates_loading">Zeugnisse werden geladen&#8230;</string>
+    <string name="fragment_certificates_certdetails_university">Universität</string>
+    <string name="fragment_certificates_certdetails_stnr">Studienkennzahl</string>
+    <string name="fragment_certificates_certdetails_coursenr">LV- Nummer</string>
+    <string name="fragment_certificates_certdetails_course">Lehrveranstaltung</string>
+    <string name="fragment_certificates_certdetails_professor">Professor</string>
+    <string name="fragment_certificates_certdetails_hours">Wochenstunden</string>
+    <string name="fragment_certificates_certdetails_ects">ECTS</string>
+    <string name="fragment_certificates_certdetails_date">Datum</string>
+    <string name="fragment_certificates_certdetails_grade">Note</string>
+    <string name="fragment_certificates_certstatistics">Statistik</string>
+    <string name="fragment_certificates_certstatistics_avg">Arithmetisches Mittel</string>
+    <string name="fragment_certificates_certstatistics_avgects">nach ECTS gewichtet</string>
+    <string name="fragment_certificates_certstatistics_avgunweighted">ungewichtet</string>
+    <string name="fragment_certificates_certstatistics_graph">Noten im Verlauf der Zeit</string>
+
+    <!-- Info Navigation -->
+    <string name="info_contribute">Mitmachen</string>
+    <string name="info_releasenotes">Versionshinweise</string>
+    <string name="info_contributors">Mitwirkende</string>
+    <string name="info_vuniapp">VUniApp</string>
+    <string name="info_impressum">Impressum</string>
+
+    <!-- Tools Activities -->
+    <string name="activity_services">Dienste</string>
+    <string name="activity_services_activate">Aktivieren</string>
+    <string name="activity_services_deactivate">Deaktivieren</string>
+    <string name="activity_services_servicename">Dienst</string>
+    <string name="activity_services_certificatenotifier">Zeugnisbenachrichtigungen</string>
+
+    <!-- Certificate Notifier Fragment -->
+    <string name="fragment_services_certificatenotifier_description">Der Werkzeug Zeugnisbenachrichtigungen, fragt in einem bestimmten Intervall alle Zeugnisse ab und zeigt eine Nachricht an, wenn ein neues Zeugnis vorhanden ist.</string>
+    <string name="fragment_services_certificatenotifier_checkingintervall">Abfrage Intervall (0:0 für alle 24 Stunden)</string>
+    <string name="fragment_services_certificatenotifier_onlywlan">Nur im WLAN laden</string>
+    <string name="fragment_services_certificatenotifier_defaultsettings">Voreinstellungen</string>
+    <string name="fragment_services_certificatenotifier_setting_daily">Täglich</string>
+    <string name="fragment_services_certificatenotifier_setting_important">Wichtig</string>
+    <string name="fragment_services_certificatenotifier_setting_hardcore">Hardcore Modus</string>
+
+    <!-- Daemons -->
+    <string name="daemon_certificatenotifier_newcertificates">Sie haben neue Zeugnisse.</string>
+
+    <!-- Abstraktions String -->
+    <string name="activity_resultsempty">Keine passenden Elemente gefunden.</string>
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/activity_user_university"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <Spinner
+        android:id="@+id/activity_user_userKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_user_university" />
+
+    <LinearLayout
+        android:id="@+id/activity_user_usernameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_user_userKey"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/activity_user_usernameText"
+            style="@style/textView_small"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/activity_user_username" />
+
+        <EditText
+            android:id="@+id/activity_user_usernameEditText"
+            style="@style/editText_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_user_passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_user_usernameLayout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/activity_user_passwordText"
+            style="@style/textView_small"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/activity_user_password" />
+
+        <EditText
+            android:id="@+id/activity_user_passwordEditText"
+            style="@style/editText_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_user_buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_user_passwordLayout"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/activity_user_saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activity_user_save" />
+
+        <Button
+            android:id="@+id/activity_user_deleteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activity_user_delete" />
+
+        <RelativeLayout
+            android:id="@+id/activity_user_testLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ProgressBar
+                android:id="@+id/activity_user_testProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/activity_testButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/activity_user_test" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

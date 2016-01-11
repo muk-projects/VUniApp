@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/application_fullscreen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- Actionbar -->
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar" />
+
+    <!-- Navigation and main content Container -->
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        style="@style/activity_navigation_container"
+        android:layout_below="@+id/actionbar" >
+
+        <!-- The main content view -->
+
+        <RelativeLayout style="@style/activity_container" >
+
+            <ListView
+                android:id="@+id/activity_subjects_subjectlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/activity_subjects_nosubjects"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dp"
+                android:text="@string/activity_subjects_nosubjects"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RelativeLayout
+                android:id="@+id/activity_subjects_subjectMenu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/menu_background" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/activity_subjects_filtered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/menu_button_background"
+                        android:text="Gelöschte LVAs" />
+
+                    <Button
+                        android:id="@+id/activity_subjects_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/menu_button_background"
+                        android:text="LVA Hinzufügen" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- The navigation drawer -->
+
+        <ListView
+            android:id="@+id/drawer_layout_list"
+            style="@style/navigation_list" />
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
